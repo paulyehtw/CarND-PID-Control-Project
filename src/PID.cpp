@@ -47,6 +47,6 @@ double PID::CalculateSteering()
    * TODO: Calculate and return the total error
    */
   double total_error = TotalError();
-  double steering = -total_error;
+  double steering = -1.0*total_error;
   return steering;
 }
