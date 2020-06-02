@@ -1,8 +1,9 @@
 #ifndef PID_H
 #define PID_H
 
-class PID {
- public:
+class PID
+{
+public:
   /**
    * Constructor
    */
@@ -31,7 +32,13 @@ class PID {
    */
   double TotalError();
 
- private:
+  /**
+   * Calculate the steering.
+   * @output steering to the car
+   */
+  double CalculateSteering();
+
+private:
   /**
    * PID Errors
    */
@@ -48,4 +55,4 @@ class PID {
   double prev_cte_;
 };
 
-#endif  // PID_H
+#endif // PID_H
