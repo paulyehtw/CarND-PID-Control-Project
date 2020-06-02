@@ -45,6 +45,7 @@ class PID {
   double Kp_;
   double Ki_;
   double Kd_;
+  double prev_cte_;
 };
 
 #endif  // PID_H
